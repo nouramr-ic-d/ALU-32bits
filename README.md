@@ -7,6 +7,7 @@ perform the designated operation.
 • Opcode (Operation Code) of 3-bit , The opcode input selects the operation that the ALU 
 should perform on the two input operands. The opcode should be capable of representing 
 different operations uniquely.
+
 Outputs :
 • The ALU should produce a 32-bit output (Result) that represents the result of the selected 
 operation. The output width is determined by the maximum result size of the supported 
