@@ -36,9 +36,7 @@ module ALU(
              3'b000 : Alu_out=A+B;
              3'b001 : Alu_out=A-B;
              3'b010 : Alu_out=A*B;
-             3'b011 : {Alu_out[15:0],Alu_out[31:16]}={
-             A%B,A/B
-             };
+             3'b011: Alu_out={A%B , A/B};
              3'b100 : Alu_out=A|B;
              3'b101 : Alu_out=A&B;
              3'b110 : Alu_out=~A;
