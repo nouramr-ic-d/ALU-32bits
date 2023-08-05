@@ -1,6 +1,4 @@
 
-
-
 module ALU_DUT( );
 
     reg[15:0] A2 , B2 ;
@@ -38,6 +36,12 @@ module ALU_DUT( );
     #50 A2 = 16'd150;
         B2=16'd7;
         op =011;
+        #50 A2 = 16'd10;
+         B2=16'd100;
+         op =011;
+        #20 A2 = 16'd10;// to test if we reach to infinity
+         B2=16'd0;
+          op =011;  
        // Test case 6:  AND
     #40   A2 = 8'b 0001_0111;
           B2 = 8'b 0001_1110;
